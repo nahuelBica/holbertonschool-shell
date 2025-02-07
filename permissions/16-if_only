@@ -1,1 +1,2 @@
 #!/bin/bash
+find . -name=hello -user=giullaume -exec chown vincent
