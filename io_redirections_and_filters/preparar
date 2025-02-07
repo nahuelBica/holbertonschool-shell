@@ -1,0 +1,9 @@
+#!/bin/bash
+for i in {4..22}; do
+  for archivo in $i*; do
+    if [ -f "$archivo" ]; then
+      echo "#!/bin/bash" >> "$archivo"
+      chmod u+x "$archivo"
+    fi
+  done
+done
